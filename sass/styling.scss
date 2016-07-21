@@ -1,0 +1,20 @@
+
+/* 
+    Created on : Jul 20, 2016, 5:54:18 PM
+    Author     : Street Money
+*/
+  $yellow         : #A57706;
+  $orange         : #BD3613;
+  $red            : #D11C24;
+  $pink           : #C61C6F;
+  $purple         : #595AB7;
+  $blue           : #2176C7;
+  $cyan           : #259286;
+  $green          : #738A05;
+ 
+ $bgmain: $pink;
+
+body {
+    background: darken($bgmain, 10);
+    color: $purple;
+}
