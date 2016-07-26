@@ -1,0 +1,49 @@
+/* 
+    Created on : Jul 22, 2016, 10:58:58 AM
+    Author     : Street Money
+*/
+//base colours
+$yellow         : #A57706;
+$orange         : #BD3613;
+$red            : #D11C24;
+$pink           : #C61C6F;
+$purple         : #595AB7;
+$blue           : #2176C7;
+$cyan           : #259286;
+$green          : #738A05;
+
+//Great Pallettes { Teal Orange }
+$darkblue: #002E40;
+$lighterblue: #2A5769;
+$light: #FFFFFF;
+$lightorange: #FABD4A;
+$oranged: #FA9600;
+
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,200,800,600);
+
+$font-family: 'Exo2 ', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$thin: 200;
+$normal: 400;
+$bold: 600;
+$heavy: 800;
+
+$headFont: $thin 1.5em/1.5em $font-family;
+$mainFont: $thin 1em/1.5em $font-family;
+$headColor: lighten($blue, 20);
+ 
+$bgmain: $pink;
+
+//susy grids, Global settings
+$susy: (
+    columns: 12,
+    container: 60em,
+    gutters: 1/4,
+    gutter-position: inside
+);
+
+//Breakpoint variables
+$narrow: 400px;
+$small: 650px;
+$medium: 960px;
+$wide: 1200px;

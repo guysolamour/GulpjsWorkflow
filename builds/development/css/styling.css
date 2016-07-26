@@ -1,12 +1,223 @@
 /* 
     Created on : Jul 20, 2016, 5:54:18 PM
     Author     : Street Money
+
+    from git bash: npm isntall compass --pre
+*/
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,200,800,600);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* 
+    Created on : Jul 22, 2016, 10:58:58 AM
+    Author     : Street Money
+*/
+/*! 
+    Created on : Jul 23, 2016, 11:39:29 AM
+    Author     : Street
+*/
+/* 
+    Created on : Jul 22, 2016, 11:00:53 AM
+    Author     : Street
 */
 body {
-  background: #991656;
+  background: #FFFFFF;
   color: #595AB7;
 }
 
+/* 
+    Created on : Jul 23, 2016, 10:59:13 AM
+    Author     : Street Money
+*/
+.btn-default, .btn-cool, .btn-hot {
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-family: "Exo2 ", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  user-select: none;
+}
 
+.btn-default {
+  background: #e6e6e6;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IkFBQ0E7OztFQUdFO0FBWUYsSUFBSztFQUNELFVBQVUsRUFBRSxPQUFtQjtFQUMvQixLQUFLLEVBVFcsT0FBTyIsInNvdXJjZXMiOlsic3R5bGluZy5zY3NzIl0sIm5hbWVzIjpbXSwiZmlsZSI6InN0eWxpbmcuY3NzIiwic291cmNlUm9vdCI6Ii9zb3VyY2UvIiwic291cmNlc0NvbnRlbnQiOlsiXG4vKiBcbiAgICBDcmVhdGVkIG9uIDogSnVsIDIwLCAyMDE2LCA1OjU0OjE4IFBNXG4gICAgQXV0aG9yICAgICA6IFN0cmVldCBNb25leVxuKi9cbiAgJHllbGxvdyAgICAgICAgIDogI0E1NzcwNjtcbiAgJG9yYW5nZSAgICAgICAgIDogI0JEMzYxMztcbiAgJHJlZCAgICAgICAgICAgIDogI0QxMUMyNDtcbiAgJHBpbmsgICAgICAgICAgIDogI0M2MUM2RjtcbiAgJHB1cnBsZSAgICAgICAgIDogIzU5NUFCNztcbiAgJGJsdWUgICAgICAgICAgIDogIzIxNzZDNztcbiAgJGN5YW4gICAgICAgICAgIDogIzI1OTI4NjtcbiAgJGdyZWVuICAgICAgICAgIDogIzczOEEwNTtcbiBcbiAkYmdtYWluOiAkcGluaztcblxuYm9keSB7XG4gICAgYmFja2dyb3VuZDogZGFya2VuKCRiZ21haW4sIDEwKTtcbiAgICBjb2xvcjogJHB1cnBsZTtcbn0iXX0= */
+.btn-cool {
+  background: #2176C7;
+}
+
+.btn-hot {
+  background: #D11C24;
+}
+
+.grid {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.grid:before, .grid:after {
+  content: '';
+  display: table;
+}
+.grid:after {
+  clear: both;
+}
+.grid .item {
+  float: left;
+  width: 19.2%;
+}
+.grid .item:nth-child(n) {
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+.grid .item:nth-child(5n) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.grid img {
+  display: block;
+  border-radius: 20px 0 20px 0;
+  max-width: 100%;
+}
+
+/* 
+    Created on : Jul 23, 2016, 11:26:23 AM
+    Author     : Street Money
+*/
+.background {
+  color: #FABD4A;
+  margin: 20px 0;
+  width: 100%;
+  display: table;
+}
+.background .container {
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom: 20px;
+}
+.background .container h1 {
+  color: #A57706;
+  font-family: "Exo2 ", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 5rem;
+  line-height: 105%;
+  margin-bottom: 0;
+  padding: 0 10%;
+}
+.background .container p {
+  padding: 0 10%;
+  margin-top: 0;
+}
+
+.jumbotron {
+  background: url("../images/water.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background: #002E40;
+  height: 600px;
+}
+
+/* 
+    Created on : Jul 23, 2016, 12:42:22 PM
+    Author     : Street Money
+
+NB: url: http://sass-lang.com/documentation/Sass/Script/Functions.html
+*/
+.table {
+  font-size: 1.5rem;
+  text-align: left;
+  width: 100%;
+}
+.table caption {
+  font-size: 2.5rem;
+  text-align: left;
+  padding-bottom: 5px;
+}
+.table > thead > tr:nth-child(even),
+.table > tbody > tr:nth-child(even),
+.table > tfoot > tr:nth-child(even) {
+  background-color: rgba(165, 119, 6, 0.2);
+}
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+  padding: 10px;
+  border-bottom: 1px dotted #2176C7;
+}
+.table > thead > tr {
+  background-color: #2176C7;
+  color: #002E40;
+}
+.table > thead > tr:hover {
+  background-color: #c77221;
+}
+.table > thead > tr > th {
+  border-bottom: none;
+}
+
+/*# sourceMappingURL=styling.css.map */

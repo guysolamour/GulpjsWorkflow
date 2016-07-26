@@ -1,0 +1,40 @@
+
+/*! 
+    Created on : Jul 23, 2016, 11:39:29 AM
+    Author     : Street
+*/
+
+@mixin backImage($image) {
+    background: url($image);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+@mixin clearfix {
+    &:before,
+        &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin imagegrid($qty, $margin) {
+    //get proper width of elems with margins only inside element items
+    width: ((100% - (($qty - 1) * $margin)) / $qty);
+    
+    //grab specific elem
+    &:nth-child(n) { //all elems
+        margin-right: $margin;
+        margin-bottom: $margin;
+    }
+    
+    //on the last elem
+    &:nth-child(#{$qty}n) { //last elem
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,48 @@
+
+/* 
+    Created on : Jul 23, 2016, 12:42:22 PM
+    Author     : Street Money
+
+NB: url: http://sass-lang.com/documentation/Sass/Script/Functions.html
+*/
+
+.table {
+    font-size: 1.5rem;
+    text-align: left;
+    width: 100%;
+    
+    caption {
+        font-size: 2.5rem;
+        text-align: left;
+        padding-bottom: 5px;
+    }
+    
+    > thead,
+    > tbody,
+    > tfoot {
+        > tr {
+            &:nth-child(even) {
+                background-color: fade-out(
+                    $yellow, .8);
+            }
+            
+            > th, 
+            > td {
+                padding: 10px;
+                border-bottom: 1px dotted $blue;
+            }
+        }
+    }
+    
+    > thead > tr {
+        background-color: $blue;
+        color: $darkblue;
+        
+        &:hover {
+            background-color: complement($blue);
+        }
+        > th {
+            border-bottom: none;
+        }
+    }
+}

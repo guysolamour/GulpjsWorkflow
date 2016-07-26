@@ -2,19 +2,28 @@
 /* 
     Created on : Jul 20, 2016, 5:54:18 PM
     Author     : Street Money
-*/
-  $yellow         : #A57706;
-  $orange         : #BD3613;
-  $red            : #D11C24;
-  $pink           : #C61C6F;
-  $purple         : #595AB7;
-  $blue           : #2176C7;
-  $cyan           : #259286;
-  $green          : #738A05;
- 
- $bgmain: $pink;
 
-body {
-    background: darken($bgmain, 10);
-    color: $purple;
-}
+    from git bash: npm isntall compass --pre
+*/
+//Compass imports
+@import "compass";
+@import "compass/reset";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import 'compass/css3/filter';
+@import "compass/css3/flexbox";
+@import "compass/css3/transition";
+
+//External Libraries
+@import "susy";
+@import "breakpoint";
+
+//core partials
+@import "variables";
+@import "mixins";
+@import "base";
+@import "interface";
+
+//modules
+@import "modules/backgrounds";
+@import "modules/tables";
